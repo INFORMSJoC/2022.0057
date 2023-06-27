@@ -75,6 +75,9 @@ wget -P raw_data/Sentiment140/ http://cs.stanford.edu/people/alecmgo/trainingand
 unzip -d raw_data/Sentiment140/ raw_data/Sentiment140/trainingandtestdata.zip
 ```
 
+## Results
+The complete training history, as well as the plots, is available at [results](results).
+
 ## Replicating
 In the root directory, run the scripts in [scripts](scripts) to reproduce the results in the paper.
 For example: `sh scripts/MNIST-FedAvg.sh`.
