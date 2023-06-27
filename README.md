@@ -4,6 +4,8 @@
 
 ![Algorithm Overview](docs/overview.png)
 
+The appendix of the paper can be found at [online_supplement.pdf](online_supplement.pdf).
+
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
