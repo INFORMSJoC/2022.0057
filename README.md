@@ -42,7 +42,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
                    Guihai Chen},
   publisher =     {INFORMS Journal on Computing},
   title =         {{Federated Optimization under Intermittent Client Availability}},
-  year =          {2022},
+  year =          {2023},
   doi =           {10.1287/ijoc.2022.0057.cd},
   url =           {https://github.com/INFORMSJoC/2022.0057},
 }  
