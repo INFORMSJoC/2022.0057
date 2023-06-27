@@ -1,0 +1,1 @@
+python src/train/server.py -ds sentiment140 -alg sgd -N 1000 -be 0.001 -C 10 -E 240 --lr_strategy const -lr 0.01 --num_rounds 30000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1 --batch_size 200
