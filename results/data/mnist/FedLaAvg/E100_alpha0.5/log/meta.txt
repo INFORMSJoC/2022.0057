@@ -1,0 +1,5 @@
+Training starts from 0
+Command: python server.py -ds mnist -alg lastavg -N 1000 -be 0.1 -C 10 -E 100 --alpha 0.5 --num_rounds 4000 --lr_strategy const --init_lr 0.01 -nm 0.0 -ns 1.0 -stg number
+Namespace(E=100, algorithm='lastavg', alpha=0.5, availability_model='blocked', batch_size=5, batch_size_when_test=100, beta=0.1, checkpoint_every=100, dataset='mnist', filter_clients=40, glove_model='glove.840B.300d', init_lr=0.01, lr_config=None, lr_decay=0.9999, lr_indicator='?', lr_strategy='const', max_test=10000, model_ori='logistic', momentum=0.0, mu_FedProx=0.0, nlp_algorithm='embedding', normalize_mean=0.0, normalize_std=1.0, num_iid=0, num_local_iterations=10, num_non_update_rounds=0, num_rounds=4000, num_total_clients=1000, print_every=1, run_name=None, statistics_every=100, strategy='number', tb_every=20)
+--------------------------------------------------------------------------------
+

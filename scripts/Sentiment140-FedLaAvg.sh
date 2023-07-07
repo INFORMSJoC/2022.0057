@@ -1,0 +1,29 @@
+# E=24 \alpha=0
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 10 -E 24 --lr_strategy const -lr 0.01 --num_rounds 30000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# E=120 \alpha=0
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# E=120 \alpha=0.25
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1 --fv_min 0.25 --fv_max 0.75
+
+# E=120 \alpha=0.5
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1 --fv_min 0.5 --fv_max 0.5
+
+# E=240 \alpha=0
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 10 -E 240 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# \beta=0.2
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.2 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# all available clients participate
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 1.0 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# N=200
+python src/train/server.py -ds sentiment140 -alg lastavg -N 200 -be 0.1 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# N=600
+python src/train/server.py -ds sentiment140 -alg lastavg -N 200 -be 0.1 -C 10 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
+
+# C=1
+python src/train/server.py -ds sentiment140 -alg lastavg -N 1000 -be 0.1 -C 1 -E 120 --lr_strategy const -lr 0.01 --num_rounds 50000 --model_ori lstm_i25_h16 --glove_model glove.twitter.27B.25d.txt -am modeled_mid -fv 1
